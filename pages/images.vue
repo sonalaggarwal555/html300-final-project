@@ -1,24 +1,3 @@
-<template>
-<div id="app">
-<div class="links">
-  <ul>
-    <li><nuxt-link to="/">Home </nuxt-link></li>
-    <li><nuxt-link to="/HelloWorld"> HelloWorld </nuxt-link></li>
-    <li><nuxt-link to="/Accordian"> Accordian </nuxt-link></li>
-    <li><nuxt-link to="/grid"> Grid</nuxt-link></li>
-  </ul>
-</div>
-<!--Place photos component on images page-->
-  <section v-if="images" class="flex-container">
-    <photos
-      v-for="image in images"
-      :image="image"
-      :key="image.src"
-      />
-  </section>
-</div>
-</template>
-
 <script>
 import photos from './photos.vue';
 import mixins from './mixins';
@@ -50,6 +29,27 @@ data () {
  }
 }
 </script>
+
+<template>
+<div id="app">
+<div class="links">
+  <ul>
+    <li><nuxt-link to="/">Home </nuxt-link></li>
+    <li><nuxt-link to="/HelloWorld"> HelloWorld </nuxt-link></li>
+    <li><nuxt-link to="/Accordian"> Accordian </nuxt-link></li>
+    <li><nuxt-link to="/grid"> Grid</nuxt-link></li>
+  </ul>
+</div>
+<!--Place photos component on images page-->
+  <section v-if="images" class="flex-container">
+    <photos
+      v-for="image in images"
+      :image="image"
+      :key="image.src"
+      />
+  </section>
+</div>
+</template>
 
 <style scoped>
 button {
