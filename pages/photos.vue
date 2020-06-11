@@ -1,7 +1,7 @@
 <template>
   <div class="card">
     <div class="cover">
-      <img :src="image.src" :alt="image.alt" id="border" class="frame card-img-top img-fluid rounded">
+      <img :src="image.src" :alt="image.alt" id="border" class="frame card-img-top img-fluid">
       <div class="overlay">
         <div class="text"> {{ image.name }} </div>
       </div>
@@ -16,7 +16,10 @@
 export default {
     name: 'photos',
     props: {
-        image: Object
+        image: Object,
+            default: function () {
+                return {}
+            }
     }
 }
 </script>

@@ -8,14 +8,6 @@
       <h2 class="subtitle">
         Final project for html300
       </h2>
-      <div class="links">
-      <ul>
-        <li><nuxt-link to="/HelloWorld">Helloworld </nuxt-link></li>
-        <li><nuxt-link to="/Accordian">Accordian</nuxt-link></li>
-        <li><nuxt-link to="/images">Images</nuxt-link></li>
-        <li><nuxt-link to="/grid">Grid</nuxt-link></li>
-      </ul>
-      </div>
     </div>
   </div>
 </template>

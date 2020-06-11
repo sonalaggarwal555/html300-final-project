@@ -6,7 +6,7 @@
 
 <script>
 export default {
-    name: 'banner'
+  name: 'banner'
 }
 </script>
 
