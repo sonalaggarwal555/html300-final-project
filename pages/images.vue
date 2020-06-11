@@ -1,16 +1,3 @@
-<template>
-<div id="app">
-<!--Place photos component on images page-->
-  <section v-if="images" class="flex-container">
-    <photos
-      v-for="image in images"
-      :image="image"
-      :key="image.src"
-      />
-  </section>
-</div>
-</template>
-
 <script>
 import photos from './photos.vue';
 import mixins from './mixins';
@@ -42,6 +29,19 @@ data () {
  }
 }
 </script>
+
+<template>
+<div id="app">
+<!--Place photos component on images page-->
+  <section v-if="images" class="flex-container">
+    <photos
+      v-for="image in images"
+      :image="image"
+      :key="image.src"
+      />
+  </section>
+</div>
+</template>
 
 <style scoped>
 button {

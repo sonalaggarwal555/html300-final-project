@@ -16,11 +16,7 @@
 export default {
     name: 'photos',
     props: {
-        image: Object,
-            default: function () {
-                return {}
-            }
-
+        image: Object
     }
 }
 </script>

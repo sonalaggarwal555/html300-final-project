@@ -39,7 +39,7 @@
          <p class="card-text">Light, bright, easy to care for. Those are just a few of the many reasons people love having tulips in the homes and gardens. But why do they come to Tulip Moment? How about oustanding customer service, high quality flowers and bulbs, and easy-to-understand care options. And we do all of it at an affordable price. Whether you're a weathered gardener, just getting started, planting a full garden or looking for something to stick in a vase with water, we've got what you're looking for, and we're happy to ship anywhere in the continental U.S.</p>
          <p class="card-text">Want tulips for your house or garden? We have colors and shapes for every taste and budget.</p>
          <!--Add v-if and v-else to buttons-->
-         <a href="/images" v-if="show" class="btn" data-toggle="tooltip" data-placement="right" title="See more tulips!">Buy tulips</a>
+         <a href="/images" v-if="show" class="btn" data-toggle="tooltip" data-placement="right" title="See more tulips!">Select</a>
          <button v-else v-on:click="show = !show" class="btn btn-danger" data-toggle="tooltip" data-placement="right" title="See more tulips!">Yes!</button>
        </div>
        <div class="grid-wrapper">
@@ -47,43 +47,43 @@
            <div class="column">
 
              <div class="zoom">
-               <img class="zoom-pic" src="/IMG_6033.jpg">
-             </div>
-
-             <div class="zoom">
-               <img class="zoom-pic"src="/IMG_6156.jpg">
-             </div>
-
-             <div class="zoom">
-               <img class="zoom-pic" src="/IMG_6170.jpg">
-             </div>
-
-           </div>
-           <div class="column">
-             <div class="zoom">
                <img class="zoom-pic" src="/pic-3.jpg">
              </div>
 
              <div class="zoom">
-               <img class="zoom-pic" src="/pic-4.jpg">
+               <img class="zoom-pic"src="/pic-4.jpg">
              </div>
 
              <div class="zoom">
                <img class="zoom-pic" src="/pic-5.jpg">
              </div>
+
            </div>
            <div class="column">
-
-           <div class="zoom">
+             <div class="zoom">
                <img class="zoom-pic" src="/pic-6.jpg">
              </div>
 
              <div class="zoom">
-               <img class="zoom-pic"src="/pic-7.jpg">
+               <img class="zoom-pic" src="/pic-7.jpg">
              </div>
 
              <div class="zoom">
                <img class="zoom-pic" src="/pic-8.jpg">
+             </div>
+           </div>
+           <div class="column">
+
+           <div class="zoom">
+               <img class="zoom-pic" src="/pic-9.jpg">
+             </div>
+
+             <div class="zoom">
+               <img class="zoom-pic"src="/pic-10.jpg">
+             </div>
+
+             <div class="zoom">
+               <img class="zoom-pic" src="/pic-11.jpg">
              </div>
 
            </div>
