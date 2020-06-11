@@ -1,13 +1,5 @@
 <template>
 <div>
-  <div class="links">
-    <ul>
-      <nuxt-link to="/">Home </nuxt-link>
-      <nuxt-link to="/Accordian"> Accordian </nuxt-link>
-      <nuxt-link to="/images"> Images </nuxt-link>
-      <nuxt-link to="/grid"> Grid</nuxt-link>
-    </ul>
-  </div>
 <div class="helloBox">
      <!--Quote card-->
      <div class="testimonials">

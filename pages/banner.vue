@@ -1,10 +1,6 @@
 <template>
-<div class="banner" id="banner">
-  <img class="img-fluid" src="../static/pic-2.jpg" alt="....">
-  <div class="logo-and-title">
-    <div class="title">This is Banner Page</div>
-    <div class="subtitle">Have spring year-round</div>
-  </div>
+<div class="logo-and-title">
+  <div class="title"><h6>This is Banner Page</h6></div>
 </div>
 </template>
 
@@ -18,9 +14,9 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
 .logo-and-title {
   position: absolute;
-  top: 50%;
+  top: 0%;
   left: 30%;
-  color: #FBDCCE;
+  color: #f4bca2;
 }
 @media screen and (max-width: 1800px) {
   .logo-and-title {
@@ -85,5 +81,9 @@ export default {
   .subtitle {
     display: none;
   }
+}
+.img-fluid{
+ height: 7rem;
+ width: 100%;
 }
 </style>

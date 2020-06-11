@@ -1,55 +1,61 @@
 <template>
-  <div>
-    <nuxt />
+  <div id="app">
+    <header>
+      <banner />
+    </header>
+    <!--Bootstrap responsive navbar with router-->
+   <nav class="navbar navbar-expand-lg m-3">
+     <a class="navbar-brand" href="#"><strong>Welcome</strong></a>
+     <nav class="navbar-nav">
+       <nuxt-link to="/HelloWorld" class="nav-item nav-link active">Home <span class="sr-only">(current)</span></nuxt-link>
+       <nuxt-link to="/images" class="nav-item nav-link">Images</nuxt-link>
+       <nuxt-link to="/grid" class="nav-item nav-link">Grid</nuxt-link>
+       <nuxt-link to="/accordian" class="nav-item nav-link">Accordian</nuxt-link>
+     </nav>
+   </nav>
+
+   <nuxt/>
+
+   <div class="end"></div>
+    <!--Basic footer-->
+    <footer class="footer">
+        <p>This is footer</p>
+    </footer>
   </div>
 </template>
-
+<script>
+import banner from '../pages/banner.vue';
+export default {
+  name: 'App',
+  components: {
+    banner
+  }
+}
+</script>
 <style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+header {
+  margin:0 10rem 0 10rem;
 }
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
+.navbar {
+  background-color: #F6F1EE;
+  font-family: 'Roboto', sans-serif;
+  border-style: solid;
+  border-size: 0.3rem;
+  border-color: #FBDCCE;
 }
-
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
+.navbar a {
+  color: #EFA885;
 }
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
+.footer {
+    color: black;
+    background-color: #F6F1EE;
+    margin-top: 2rem;
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+.end {
+  clear: both;
 }
 </style>

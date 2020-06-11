@@ -1,15 +1,7 @@
 <template>
   <div>
-  <div class="links">
-    <ul>
-      <li><nuxt-link to="/">Home</nuxt-link></li>
-      <li><nuxt-link to="/HelloWorld">HelloWorld</nuxt-link></li>
-      <li><nuxt-link to="/Accordian">Accordian</nuxt-link></li>
-      <li><nuxt-link to="/Images">Images</nuxt-link></li>
-    </ul>
-  </div>
     <div class="headline">
-      <p>This is the Grid Page</p>
+      <p style="text-align: center">This is the Grid Page</p>
     </div>
         <!--Boostrap grid responsive to xs, small, medium, large, xl sizes-->
         <!--Use v-for to loop populate grid-->

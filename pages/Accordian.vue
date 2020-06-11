@@ -1,13 +1,5 @@
 <template>
     <div class="faq-container">
-    <div class="links">
-    <ul>
-      <li><nuxt-link to="/">Home</nuxt-link></li>
-      <li><nuxt-link to="/HelloWorld">HelloWorld</nuxt-link></li>
-      <li><nuxt-link to="/images">Images</nuxt-link></li>
-      <li><nuxt-link to="/grid">Grid</nuxt-link></li>
-    </ul>
-    </div>
         <h2 class="m-3">Frequently asked questions</h2>
         <!--Use v-for to populate accordion-->
         <div v-for="item in items" class="accordion" id="accordion">

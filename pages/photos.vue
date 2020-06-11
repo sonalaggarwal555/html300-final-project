@@ -7,7 +7,7 @@
       </div>
     </div>
   <div class="caption"> {{ image.caption }} </div>
-  <a href="#" class="btn btn-outline-light">Buy</a>
+  <a href="#" class="btn btn-outline-light">Select</a>
  </div>
 </template>
 
