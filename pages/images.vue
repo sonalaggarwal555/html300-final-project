@@ -3,7 +3,7 @@ import photos from './photos.vue';
 import mixins from './mixins';
 
 //Create variable paths for images
-var card1 = require('../static/cover.JPG');
+var card1 = require('../static/cover.jpg');
 var card2 = require('../static/cover2.jpg');
 var card3 = require('../static/flowercocktails.jpg');
 var card4 = require('../static/lemonade.jpg');
