@@ -1,6 +1,7 @@
 <script>
 import photos from './photos.vue';
 import mixins from './mixins';
+
 //Create variable paths for images
 var card1 = require('../static/cover.JPG');
 var card2 = require('../static/cover2.jpg');
@@ -8,6 +9,7 @@ var card3 = require('../static/flowercocktails.jpg');
 var card4 = require('../static/lemonade.jpg');
 var card5 = require('../static/pic-14.jpg');
 var card6 = require('../static/pic-13.jpg')
+
 //Images object and data
 export default {
 name: 'Images',

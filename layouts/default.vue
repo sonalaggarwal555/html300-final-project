@@ -14,6 +14,7 @@
      </nav>
    </nav>
 
+   <!--Where each component content will render-->
    <nuxt/>
 
    <div class="end"></div>

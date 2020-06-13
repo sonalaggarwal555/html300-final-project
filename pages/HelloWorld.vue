@@ -51,7 +51,7 @@
              </div>
 
              <div class="zoom">
-               <img class="zoom-pic"src="/pic-4.jpg">
+               <img class="zoom-pic" src="/pic-4.jpg">
              </div>
 
              <div class="zoom">
@@ -79,7 +79,7 @@
              </div>
 
              <div class="zoom">
-               <img class="zoom-pic"src="/pic-10.jpg">
+               <img class="zoom-pic" src="/pic-10.jpg">
              </div>
 
              <div class="zoom">
@@ -107,6 +107,7 @@
            </div>
          </div>
          <button v-else v-on:click="show = !show" class="btn btn-danger" data-toggle="tooltip" data-placement="right">What's new today?</button>
+         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
        </div>
      </div>
    </div>

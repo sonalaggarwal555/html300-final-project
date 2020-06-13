@@ -1,6 +1,8 @@
 <template>
-<div class="logo-and-title">
-  <div class="title"><h6>This is Banner Page</h6></div>
+<div class="banner" id="banner">
+  <div class="logo-and-title">
+    <div class="title"><h6>This is Banner Page</h6></div>
+  </div>
 </div>
 </template>
 

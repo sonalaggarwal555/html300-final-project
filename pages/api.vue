@@ -1,3 +1,12 @@
+<template>
+    <div class="flex-item">
+        <h6> {{ item.source.name }} </h6>
+        <a :href="item.url"> {{ item.title }} </a>
+        <p><img :src="item.urlToImage"></p>
+        <p> {{ item.author }} </p>
+    </div>
+</template>
+
 <script>
 export default {
 	props: {
@@ -5,15 +14,6 @@ export default {
 	}
 }
 </script>
-
-<template>
-    <div class="flex-item">
-        <h6> {{ item.name }} </h6>
-        <a :href="item.url"> {{ item.title }} </a>
-        <p><img :src="item.urlToImage"></p>
-        <p> {{ item.author }} </p>
-    </div>
-</template>
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');

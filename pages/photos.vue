@@ -1,39 +1,42 @@
 <template>
-  <div class="card">
-    <div class="cover">
-      <img :src="image.src" :alt="image.alt" id="border" class="frame card-img-top img-fluid">
-      <div class="overlay">
-        <div class="text"> {{ image.name }} </div>
-      </div>
+<div class="card">
+  <div class="cover">
+    <img :src="image.src" :alt="image.alt" id="border" class="frame card-img-top img-fluid">
+    <div class="overlay">
+      <div class="text"> {{ image.name }} </div>
     </div>
+  </div>
   <div class="caption"> {{ image.caption }} </div>
   <a href="#" class="btn btn-outline-light">Select</a>
- </div>
+</div>
 </template>
 
 <script>
 //Prop validation for component
 export default {
-    name: 'photos',
-    props: {
-        image: Object,
-            default: function () {
-                return {}
-            }
+  name: 'photos',
+  props: {
+    image: Object,
+    default: function() {
+      return {}
     }
+  }
 }
 </script>
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 .card {
   width: 30rem;
   margin: 0.5rem;
 }
+
 .frame {
   padding: 0.3rem;
   background-color: ;
 }
+
 .overlay {
   position: absolute;
   top: 0;
@@ -46,13 +49,16 @@ export default {
   transition: .5s ease;
   background-color: #95bed1;
 }
+
 .cover:hover .overlay {
   opacity: 1;
 }
+
 .text {
   color: white;
   font-size: 3rem;
-  font-family: 'Lobster', cursive;  position: absolute;
+  font-family: 'Lobster', cursive;
+  position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -60,10 +66,12 @@ export default {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
 .caption {
   padding: 1rem;
   font-family: 'Roboto', sans-serif;
 }
+
 .btn {
   font-family: 'Roboto', sans-serif;
   color: #EFA885;

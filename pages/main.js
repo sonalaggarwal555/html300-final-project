@@ -2,10 +2,11 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from '../layouts/default.vue'
-import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 //import router from './router'
+import 'bootstrap'
 import BootstrapVue from 'bootstrap-vue'
+import './main.scss'
 
 Vue.use(BootstrapVue)
 
